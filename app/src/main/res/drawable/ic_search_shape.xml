@@ -1,0 +1,27 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Círculo de la lupa -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="2dp"
+                android:color="@android:color/white"/>
+            <size
+                android:width="16dp"
+                android:height="10dp"/> <!-- Tamaño del círculo -->
+        </shape>
+    </item>
+
+    <!-- Mango de la lupa -->
+    <item android:right="14dp" android:bottom="-8dp">
+        <rotate
+            android:fromDegrees="60"> <!-- Rotación para inclinar el mango -->
+            <shape android:shape="rectangle">
+                <solid android:color="@android:color/white"/>
+                <size android:width="0dp" android:height="0dp"/>
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

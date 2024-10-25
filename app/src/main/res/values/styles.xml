@@ -1,0 +1,13 @@
+<resources>
+    <!-- Otros estilos ya existentes -->
+
+    <!-- Definimos un estilo personalizado para TextInput -->
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Personaliza los colores del borde, texto, etc. -->
+        <item name="boxStrokeColor">#FFFFFF</item>  <!-- Color del borde -->
+        <item name="hintTextColor">@color/white</item>  <!-- Color del hint (texto sugerido) -->
+        <item name="android:textColor">@color/white</item>  <!-- Color del texto ingresado -->
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+    </style>
+</resources>

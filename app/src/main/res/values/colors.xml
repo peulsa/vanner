@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="colorPrimary">#A5D6A7</color> <!-- Verde claro -->
+    <color name="colorSecondary">#F48FB1</color> <!-- Rosa claro -->
+
+    <!-- Colores para textos -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_hint_strong">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="gray_light">#B0B0B0</color>
+
+    <!-- Colores para botones -->
+    <color name="button_primary">#4CAF50</color> <!-- Verde para el botón principal -->
+    <color name="button_secondary">#FF5722</color> <!-- Naranja para el botón secundario -->
+
+    <!-- Colores para tarjetas y fondos en modo oscuro -->
+    <color name="dark_background">#121212</color>
+    <color name="dark_card">#1F1F1F</color> <!-- Color oscuro para las tarjetas -->
+    <color name="dark_gray">#2E2E2E</color>
+    <color name="dark_button_primary">#1b5e20</color>
+    <color name="dark_button_secondary">#004d40</color>
+    <color name="backgroundColorDark">#121212</color>
+
+    <!-- Agregando el color faltante -->
+    <color name="green_primary">#4CAF50</color> <!-- Este es el color faltante, un verde estándar -->
+
+    <!-- Colores adicionales para chips y separadores -->
+    <color name="chip_selected">#4CAF50</color> <!-- Color para chips seleccionados -->
+    <color name="chip_unselected">#B0B0B0</color> <!-- Color para chips no seleccionados -->
+    <color name="divider_color">#373737</color> <!-- Separadores o bordes entre secciones -->
+    <color name="highlight_color">#4CAF50</color> <!-- Color para elementos destacados -->
+
+    <!-- Colores de advertencia o acciones -->
+    <color name="red">#FF0000</color>
+    <color name="yellow_warning">#FFC107</color> <!-- Color de advertencia (opcional) -->
+</resources>

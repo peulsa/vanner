@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#4CAF50" /> <!-- Color verde -->
+    <corners android:radius="50dp" />  <!-- Botón redondo -->
+</shape>
