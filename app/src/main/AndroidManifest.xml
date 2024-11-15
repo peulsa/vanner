@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tinderempleosapp">
+
+    <!-- Permiso para acceso a Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TinderEmpleosApp">
+
+        <!-- Actividad principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Otras actividades -->
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".RegistrerActivity" android:exported="false" />
+        <activity android:name=".UserInfoActivity" android:exported="true" />
+        <activity android:name=".CompanyInfoActivity" android:exported="true" />
+        <activity android:name=".UserProfileActivity" android:exported="true" />
+        <activity android:name=".CompanyProfileActivity" android:exported="true" />
+        <activity android:name=".AdminProfileActivity" android:exported="true" />
+        <activity android:name=".AdminCreateAdminActivity" android:exported="true" />
+        <activity android:name=".CreateJobCompanyActivity" android:exported="true" />
+        <activity android:name=".ViewJobsUserActivity" android:exported="true" />
+        <activity android:name=".ViewWorkerCompanyActivity" android:allowEmbedded="true"/>
+        <activity android:name=".ViewUsersAdminActivity" android:allowEmbedded="true"/>
+        <activity android:name=".ModifyUserAdminActivity" android:allowEmbedded="true"/>
+        <activity android:name=".ViewCompaniesAdminActivity" android:allowEmbedded="true"/>
+        <activity android:name=".ModifyCompanyAdminActivity" android:allowEmbedded="true"/>
+    </application>
+</manifest>
+

@@ -1,0 +1,171 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".CompanyProfileActivity">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil"
+        android:alpha="0.3" />
+
+    <!-- Card para contener la información de la empresa -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/companyCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="10dp"
+        android:backgroundTint="@color/dark_card"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Imagen de la empresa -->
+            <ImageView
+                android:id="@+id/companyImagePlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/usuario"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Imagen de la empresa"
+                android:background="@drawable/circular_background" />
+
+            <!-- Nombre de la empresa -->
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la Empresa"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Ubicación de la empresa -->
+
+            <!-- Descripción de la empresa -->
+            <TextView
+                android:id="@+id/companyDescriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sobre la Empresa"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/companyDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción detallada de la empresa"
+                android:textSize="16sp"
+                android:textColor="@color/gray_light"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Título para "Interesado en" -->
+            <TextView
+                android:id="@+id/categoriesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interesado en"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Intereses de la empresa -->
+            <TextView
+                android:id="@+id/interestsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquí van los intereses"
+                android:textSize="16sp"
+                android:textColor="@color/gray_light"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Título para "Horarios de Trabajo" -->
+            <TextView
+                android:id="@+id/horariosLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horarios de Trabajo"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Horarios de trabajo -->
+            <TextView
+                android:id="@+id/horariosInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lunes a Viernes: 9 AM - 6 PM"
+                android:textSize="16sp"
+                android:textColor="@color/gray_light"
+                android:layout_marginBottom="4dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/buttonCrearTrabajo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/dark_button_primary"
+        android:text="Crear Trabajo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companyCard" />
+
+    <Button
+        android:id="@+id/buttonVerTrabajadores"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/dark_button_primary"
+        android:text="Ver Empleados interesados"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCrearTrabajo" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/button_secondary"
+        android:text="Cerrar sesión"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonVerTrabajadores" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

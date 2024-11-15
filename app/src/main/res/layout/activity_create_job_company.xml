@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/tituloCrearTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Trabajo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- Campo Título del Trabajo -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tituloInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Título del Trabajo"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/white_hint_strong"
+        app:layout_constraintTop_toBottomOf="@id/tituloCrearTrabajo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_hint_strong"
+            android:backgroundTint="@android:color/transparent"
+            android:background="#eeefef" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Descripción -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descripcionInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/white_hint_strong"
+        app:layout_constraintTop_toBottomOf="@id/tituloInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_hint_strong"
+            android:backgroundTint="@android:color/transparent"
+            android:background="#eeefef" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Salario -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/salarioInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Salario"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/white_hint_strong"
+        app:layout_constraintTop_toBottomOf="@id/descripcionInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_salario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_hint_strong"
+            android:backgroundTint="@android:color/transparent"
+            android:background="#eeefef" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón Guardar Trabajo -->
+    <Button
+        android:id="@+id/button_guardar_trabajo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/green_primary"
+        android:text="Guardar Trabajo"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salarioInputLayout" />
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolverRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Volver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

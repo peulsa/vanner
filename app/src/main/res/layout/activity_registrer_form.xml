@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrerActivity">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImageRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
+
+    <!-- Título del formulario -->
+    <TextView
+        android:id="@+id/registroTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo Nombre Completo -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombreInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white_hint_strong"
+        app:layout_constraintTop_toBottomOf="@id/registroTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Correo Electrónico -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/correoInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white_hint_strong"
+        app:layout_constraintTop_toBottomOf="@id/nombreInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/white_hint_strong"
+            android:background="#eeefef "/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Contraseña -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contrasenaInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white_hint_strong"
+        app:layout_constraintTop_toBottomOf="@id/correoInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contrasenaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/white_hint_strong"
+            android:background="#eeefef "/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- RadioGroup para seleccionar tipo de usuario -->
+    <RadioGroup
+        android:id="@+id/radioGroupTipoUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintTop_toBottomOf="@id/contrasenaInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empresa"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <!-- Botón para ir a la siguiente sección -->
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/green_primary"
+        android:text="Siguiente"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupTipoUsuario" />
+
+    <!-- Botón de Volver -->
+    <Button
+        android:id="@+id/btnVolverRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Volver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

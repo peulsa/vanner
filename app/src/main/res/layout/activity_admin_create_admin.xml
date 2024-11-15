@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarAdminActivity">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImageRegistroAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
+
+    <!-- ScrollView para el contenido -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:fillViewport="true">
+
+        <!-- Contenedor interior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:paddingBottom="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Título del formulario -->
+            <TextView
+                android:id="@+id/registroAdminTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar Administrador"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- Campos del formulario (Nombre, Correo, Contraseña, etc.) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombreInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Completo"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombreEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/correoInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/correoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColorHint="@color/white_hint_strong"
+                    android:background="#eeefef "/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Resto de los campos (Contraseña, Edad, Ciudad, País, etc.) -->
+            <!-- Campo Contraseña -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contrasenaInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contrasenaEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColorHint="@color/white_hint_strong"
+                    android:background="#eeefef "/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Campo Edad -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cargoInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cargo"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cargoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:background="#eeefef "
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColorHint="@color/white_hint_strong" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Campo Ciudad -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ciudadInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ciudad"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ciudadEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColorHint="@color/white_hint_strong"
+                    android:background="#eeefef "/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Campo País -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/paisInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="País"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/paisEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColorHint="@color/white_hint_strong"
+                    android:background="#eeefef "/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Campo Información Adicional -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/infoInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Información adicional"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/infoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColorHint="@color/white_hint_strong"
+                    android:background="#eeefef "/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Botón de Registro -->
+            <Button
+                android:id="@+id/btnRegistrarAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/green_primary"
+                android:text="Registrar"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón de Volver -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

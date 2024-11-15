@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyInfoActivity">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImageInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
+
+    <!-- Título del formulario -->
+    <TextView
+        android:id="@+id/infoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información de la Empresa"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo Nombre de la Empresa -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombreEmpresaInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la Empresa"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/infoTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombreEmpresaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/white_hint_strong"
+            android:background="#eeefef "/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Sobre La Empresa -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/aboutEmpresaInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Sobre La Empresa"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/nombreEmpresaInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/aboutEmpresaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/white_hint_strong"
+            android:background="#eeefef "/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sección de Interesados en -->
+    <TextView
+        android:id="@+id/interesadosLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interesados en"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/aboutEmpresaInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo para Interesados en -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/interesadosInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el interés"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/interesadosLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/interesadosEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/white_hint_strong"
+            android:background="#eeefef "/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/horariosInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Horarios de Trabajo"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/interesadosInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/horariosEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/white_hint_strong"
+            android:background="#eeefef "/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolverEmpresaInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Volver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón Enviar -->
+    <Button
+        android:id="@+id/btnEnviarEmpresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:backgroundTint="@color/green_primary"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintTop_toBottomOf="@id/horariosInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

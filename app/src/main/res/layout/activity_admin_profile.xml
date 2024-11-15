@@ -1,0 +1,129 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".AdminProfileActivity">
+
+    <!-- Imagen de perfil del administrador dentro de un contenedor circular -->
+    <ImageView
+        android:id="@+id/adminProfileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/usuario"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circular_background"
+        android:contentDescription="Imagen del administrador"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nombre del administrador -->
+    <TextView
+        android:id="@+id/adminProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre del Admin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/adminProfileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- RUT del administrador -->
+    <TextView
+        android:id="@+id/adminProfileGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RUT: 12345678-9"
+        android:textColor="@color/gray_light"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintTop_toBottomOf="@id/adminProfileName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Puesto del administrador -->
+    <TextView
+        android:id="@+id/adminProfilePosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cargo: Gerente General"
+        android:textColor="@color/gray_light"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintTop_toBottomOf="@id/adminProfileGmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón para acceder a crear un administrador -->
+
+    <!-- Botón para acceder al listado de usuarios -->
+
+    <!-- Botón para salir de la sesión (opcional) -->
+
+    <Button
+        android:id="@+id/btnAdminCreate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/button_primary"
+        android:text="Crear Administrador"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminProfilePosition" />
+
+
+    <Button
+        android:id="@+id/btnUserList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/button_primary"
+        android:text="Ver lista de Usuarios"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAdminCreate" />
+
+    <Button
+        android:id="@+id/btn_empresas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="@color/button_primary"
+        android:text="Ver lista de Empresas"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAdminCreate" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/button_secondary"
+        android:text="Cerrar sesión"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnUserList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

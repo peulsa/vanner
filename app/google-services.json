@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "734323979658",
+    "firebase_url": "https://vanner-4b315-default-rtdb.firebaseio.com",
+    "project_id": "vanner-4b315",
+    "storage_bucket": "vanner-4b315.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734323979658:android:501564a2a15ae0ede58473",
+        "android_client_info": {
+          "package_name": "com.example.tinderempleosapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtFlpEqNWRgv4Ox1dNWtyABtGC7SCL4lQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
