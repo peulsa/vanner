@@ -23,7 +23,7 @@
     <color name="dark_button_secondary">#004d40</color>
     <color name="backgroundColorDark">#121212</color>
 
-    <!-- Agregando el color faltante -->
+
     <color name="green_primary">#4CAF50</color> <!-- Este es el color faltante, un verde estándar -->
 
     <!-- Colores adicionales para chips y separadores -->
@@ -35,4 +35,7 @@
     <!-- Colores de advertencia o acciones -->
     <color name="red">#FF0000</color>
     <color name="yellow_warning">#FFC107</color> <!-- Color de advertencia (opcional) -->
+
+
+
 </resources>

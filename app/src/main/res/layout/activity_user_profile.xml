@@ -1,5 +1,4 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,14 +6,21 @@
     android:background="@color/dark_background"
     tools:context=".UserProfileActivity">
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_gray"
+        tools:context=".AdminProfileActivity" />
+
     <!-- Imagen de fondo -->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:alpha="0.3"
         android:scaleType="centerCrop"
-        android:src="@drawable/login"
-        android:alpha="0.3" />
+        android:src="@drawable/login" />
 
     <!-- Card para contener la información del usuario -->
     <com.google.android.material.card.MaterialCardView
@@ -22,17 +28,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/dark_card"
         app:cardCornerRadius="24dp"
         app:cardElevation="10dp"
-        android:backgroundTint="@color/dark_card"
-        android:layout_marginTop="48dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="24dp">
 
@@ -41,111 +47,130 @@
                 android:id="@+id/userImagePlaceholder"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/usuario"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/circular_background"
                 android:contentDescription="Imagen de perfil"
-                android:background="@drawable/circular_background" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/usuario" />
 
             <!-- Nombre del usuario -->
             <TextView
                 android:id="@+id/userName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre del Usuario"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:text="Nombre del Usuario"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
 
+            <!-- Ubicación del usuario -->
             <TextView
                 android:id="@+id/userEdad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="edad"
-                android:textSize="16sp"
-                android:textColor="@color/gray_light"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp" />
+                android:layout_marginBottom="16dp"
+                android:text="edad"
+                android:textColor="@color/gray_light"
+                android:textSize="16sp" />
 
-            <!-- Ubicación del usuario -->
+            <!-- Descripción "Sobre mí" del usuario -->
+
             <TextView
                 android:id="@+id/userCiudad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ciudad"
-                android:textSize="16sp"
-                android:textColor="@color/gray_light"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp" />
+                android:layout_marginBottom="16dp"
+                android:text="Ciudad"
+                android:textColor="@color/gray_light"
+                android:textSize="16sp" />
 
-            <!-- Descripción "Sobre mí" del usuario -->
             <TextView
                 android:id="@+id/userDescriptionLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Sobre mí"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:layout_marginBottom="4dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/userDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:text="Descripción del usuario"
-                android:textSize="16sp"
                 android:textColor="@color/gray_light"
-                android:layout_marginBottom="16dp" />
+                android:textSize="16sp" />
 
             <!-- Título para "Habilidades Técnicas" -->
             <TextView
                 android:id="@+id/userSkillsLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="Habilidades Técnicas"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:layout_marginBottom="8dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <!-- Habilidades del usuario -->
             <TextView
                 android:id="@+id/userSkill1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:text="Programación en Java"
-                android:textSize="16sp"
                 android:textColor="@color/gray_light"
-                android:layout_marginBottom="4dp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
+
     <Button
         android:id="@+id/btnVerTrabajosDispo"
-        android:layout_width="0dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="@color/dark_button_primary"
-        android:text="Ver trabajos disponibles"
+        android:text="Ofertas Laborales"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnChats"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/userCard" />
+
+    <Button
+        android:id="@+id/btnChats"
+        android:layout_width="166dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_button_primary"
+        android:text="Chat"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnVerTrabajosDispo"
+        app:layout_constraintTop_toBottomOf="@id/userCard" />
+
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="@color/button_secondary"
-        android:text="Cerrar sesión"
+        android:text="CERRAR SESIÓN"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

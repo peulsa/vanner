@@ -47,10 +47,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:textColor="@color/white"
             android:backgroundTint="@android:color/transparent"
             android:textColorHint="@color/white_hint_strong"
-            android:background="#eeefef "/>
+            android:textColor="@color/white"
+            android:background="#eeefef"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Campo Edad -->
@@ -72,10 +72,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:textColor="@color/white"
             android:backgroundTint="@android:color/transparent"
             android:textColorHint="@color/white_hint_strong"
-            android:background="#eeefef "/>
+            android:textColor="@color/white"
+            android:background="#eeefef"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Campo Ciudad -->

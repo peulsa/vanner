@@ -7,6 +7,15 @@
     android:background="@color/dark_gray"
     tools:context=".AdminProfileActivity">
 
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_gray"
+        tools:context=".AdminProfileActivity"/>
+
     <!-- Imagen de perfil del administrador dentro de un contenedor circular -->
     <ImageView
         android:id="@+id/adminProfileImage"

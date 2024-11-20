@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);  // Vinculamos el layout con la clase Java
 
+
         // Vinculamos los botones a sus IDs
         loginButton = findViewById(R.id.loginButton);
         signupButton = findViewById(R.id.signupButton);

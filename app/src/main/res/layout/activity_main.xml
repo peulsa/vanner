@@ -7,6 +7,7 @@
     android:background="@color/dark_background"
     tools:context=".MainActivity">
 
+
     <!-- Imagen de fondo -->
     <ImageView
     android:id="@+id/backgroundImage"
@@ -21,17 +22,21 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.0" />
 
-    <!-- Título de la app -->
     <TextView
-    android:id="@+id/appTitle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="128dp"
-    android:fontFamily="sans-serif-medium"
-    android:gravity="center"
-    android:text="Vanner"
-    android:textColor="@color/white"
-    android:textSize="36sp"
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="VÁNER"
+        android:textColor="#181818"
+        android:textSize="60sp"
+    android:textStyle="bold"
+    android:shadowColor="#D2D5CF"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="5"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.497"
     app:layout_constraintStart_toStartOf="parent"
@@ -39,45 +44,47 @@
 
     <!-- Subtítulo de la app -->
     <TextView
-    android:id="@+id/subtitle"
-    android:layout_width="272dp"
-    android:layout_height="34dp"
-    android:layout_marginTop="36dp"
-    android:gravity="center"
-    android:text="Encuentra tu equipo de trabajo ideal"
-    android:textColor="@color/white"
-    android:textSize="16sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+        android:id="@+id/subtitle"
+        android:layout_width="284dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Encuentra tu equipo de trabajo ideal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
 
     <!-- Botón de iniciar sesión -->
     <Button
-    android:id="@+id/loginButton"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="32dp"
-    android:layout_marginTop="104dp"
-    android:backgroundTint="@color/dark_button_primary"
-    android:text="Acceder a tu Cuenta "
-    android:textColor="@color/white"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+        android:id="@+id/loginButton"
+        android:layout_width="331dp"
+        android:layout_height="59dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/dark_button_primary"
+        android:text="Ingresar"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
 
         <!-- Botón de registrarse -->
     <Button
-    android:id="@+id/signupButton"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="32dp"
-    android:layout_marginTop="44dp"
-    android:backgroundTint="@color/dark_button_secondary"
-    android:text="Registrarse"
-    android:textColor="@color/white"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        android:id="@+id/signupButton"
+        android:layout_width="339dp"
+        android:layout_height="61dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/dark_button_secondary"
+        android:text="Registrarse"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
