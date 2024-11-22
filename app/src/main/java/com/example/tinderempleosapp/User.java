@@ -10,9 +10,10 @@ public class User {
     private String pais;
     private String sobremi;
     private String tipo;
+    private String profileImageUrl; // URL de la imagen de perfil
 
     // Constructor que incluye todos los campos
-    public User(String name, String email, String clave, String ciudad, String edad, String info, String pais, String sobremi, String tipo) {
+    public User(String name, String email, String clave, String ciudad, String edad, String info, String pais, String sobremi, String tipo, String profileImageUrl) {
         this.name = name;
         this.email = email;
         this.clave = clave;
@@ -22,9 +23,7 @@ public class User {
         this.pais = pais;
         this.sobremi = sobremi;
         this.tipo = tipo;
-    }
-
-    public User(String juanPérez, String mail, String clave123, String santiago, String number, String desarrolladorDeSoftware) {
+        this.profileImageUrl = profileImageUrl; // Asignar la URL de la imagen
     }
 
     // Métodos getter
@@ -64,6 +63,10 @@ public class User {
         return tipo;
     }
 
+    public String getProfileImageUrl() {
+        return profileImageUrl; // Obtener la URL de la imagen
+    }
+
     // Métodos setter
     public void setName(String name) {
         this.name = name;
@@ -100,6 +103,8 @@ public class User {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    public void setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl; // Establecer la URL de la imagen
+    }
 }
-
-

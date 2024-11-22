@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="colorPrimary">#2E7D32</color> <!-- Verde oscuro -->
+    <color name="colorSecondary">#AD1457</color> <!-- Rosa oscuro -->
+
+    <!-- Colores para textos -->
+    <color name="white">#FFFFFF</color> <!-- Texto blanco -->
+    <color name="white_hint_strong">#B3FFFFFF</color> <!-- Blanco translúcido -->
+    <color name="black">#E0E0E0</color> <!-- Gris claro (para contraste en fondos oscuros) -->
+    <color name="gray">#B0B0B0</color> <!-- Gris más claro -->
+    <color name="gray_light">#D6D6D6</color> <!-- Gris muy claro -->
+
+    <!-- Colores para botones -->
+    <color name="button_primary">#388E3C</color> <!-- Verde oscuro para el botón principal -->
+    <color name="button_secondary">#D84315</color> <!-- Naranja quemado para el botón secundario -->
+
+    <!-- Colores para tarjetas y fondos en modo oscuro -->
+    <color name="dark_background">#121212</color> <!-- Fondo negro principal -->
+    <color name="dark_card">#1F1F1F</color> <!-- Color oscuro para tarjetas -->
+    <color name="dark_gray">#2E2E2E</color> <!-- Gris oscuro adicional -->
+    <color name="dark_button_primary">#1B5E20</color> <!-- Verde muy oscuro -->
+    <color name="dark_button_secondary">#004D40</color> <!-- Verde azulado oscuro -->
+    <color name="backgroundColorDark">#121212</color> <!-- Fondo de toda la app en modo noche -->
+
+    <!-- Colores adicionales -->
+    <color name="green_primary">#1B5E20</color> <!-- Verde oscuro estándar -->
+
+    <!-- Colores para chips y separadores -->
+    <color name="chip_selected">#388E3C</color> <!-- Verde oscuro para chips seleccionados -->
+    <color name="chip_unselected">#757575</color> <!-- Gris oscuro para chips no seleccionados -->
+    <color name="divider_color">#424242</color> <!-- Separadores oscuros -->
+    <color name="highlight_color">#81C784</color> <!-- Verde más claro para destacar -->
+
+    <!-- Colores de advertencia o acciones -->
+    <color name="red">#D32F2F</color> <!-- Rojo más oscuro -->
+    <color name="yellow_warning">#FFAB00</color> <!-- Amarillo mostaza -->
+
+    <!-- Colores para campos de texto -->
+    <color name="text_input_box_stroke">#B0B0B0</color> <!-- Borde gris claro -->
+    <color name="text_input_hint">#B3FFFFFF</color> <!-- Hint blanco translúcido -->
+    <color name="text_input_text">#FFFFFF</color> <!-- Texto blanco -->
+    <color name="background">#121212</color> <!-- Fondo oscuro -->
+</resources>

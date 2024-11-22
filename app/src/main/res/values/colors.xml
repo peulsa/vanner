@@ -36,6 +36,9 @@
     <color name="red">#FF0000</color>
     <color name="yellow_warning">#FFC107</color> <!-- Color de advertencia (opcional) -->
 
-
+    <color name="text_input_box_stroke">#000000</color> <!-- Borde negro -->
+    <color name="text_input_hint">#808080</color> <!-- Hint gris -->
+    <color name="text_input_text">#000000</color> <!-- Texto negro -->
+    <color name="background">#FFFFFF</color> <!-- Fondo blanco -->
 
 </resources>

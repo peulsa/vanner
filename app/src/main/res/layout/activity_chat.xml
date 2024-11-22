@@ -28,15 +28,6 @@
             android:gravity="center_vertical"
             android:padding="8dp">
 
-            <!-- Imagen de perfil en un círculo -->
-            <ImageView
-                android:id="@+id/profileImage"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sample_profile"
-                android:background="@drawable/circular_image_background" />
-
             <!-- Nombre del usuario -->
             <TextView
                 android:id="@+id/userName"

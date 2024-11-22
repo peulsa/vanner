@@ -7,30 +7,22 @@ public class Company {
     private String sobreEmpresa;
     private String interes;
     private String horario;
-    private String tipo; // Puedes agregar otros atributos según sea necesario
+    private String tipo;
+    private String profileImageUrl; // URL de la imagen de perfil
 
     // Constructor que incluye todos los campos
-    public Company(String name, String correo, String clave, String sobreEmpresa, String interes, String horario, String tipo) {
+    public Company(String name, String correo, String clave, String sobreEmpresa, String interes, String horario, String tipo, String profileImageUrl) {
         this.name = name;
         this.correo = correo;
         this.clave = clave;
         this.sobreEmpresa = sobreEmpresa;
         this.interes = interes;
         this.horario = horario;
-        this.tipo = tipo; // Puedes establecer el tipo de empresa si es necesario
+        this.tipo = tipo;
+        this.profileImageUrl = profileImageUrl; // Asignar la URL de la imagen
     }
 
-    // Constructor de ejemplo
-    public Company(String nombreEmpresa, String email, String password, String descripcion, String intereses, String horarioLaboral) {
-        this.name = nombreEmpresa;
-        this.correo = email;
-        this.clave = password;
-        this.sobreEmpresa = descripcion;
-        this.interes = intereses;
-        this.horario = horarioLaboral;
-    }
-
-    // Métodos getter
+    // Métodos getter y setter
     public String getName() {
         return name;
     }
@@ -59,33 +51,13 @@ public class Company {
         return tipo;
     }
 
-    // Métodos setter
-    public void setName(String name) {
-        this.name = name;
+    public String getProfileImageUrl() {
+        return profileImageUrl;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
     }
 
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
-
-    public void setSobreEmpresa(String sobreEmpresa) {
-        this.sobreEmpresa = sobreEmpresa;
-    }
-
-    public void setInteres(String interes) {
-        this.interes = interes;
-    }
-
-    public void setHorario(String horario) {
-        this.horario = horario;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
+    // Otros setters y getters aquí si es necesario...
 }
-

@@ -7,21 +7,21 @@
     android:background="@color/dark_background"
     tools:context=".MainActivity">
 
-
     <!-- Imagen de fondo -->
     <ImageView
-    android:id="@+id/backgroundImage"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    android:scaleType="centerCrop"
-    android:src="@drawable/login"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.0" />
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Título de la app -->
     <TextView
         android:id="@+id/appTitle"
         android:layout_width="wrap_content"
@@ -32,15 +32,15 @@
         android:text="VÁNER"
         android:textColor="#181818"
         android:textSize="60sp"
-    android:textStyle="bold"
-    android:shadowColor="#D2D5CF"
-    android:shadowDx="3"
-    android:shadowDy="3"
-    android:shadowRadius="5"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.497"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold"
+        android:shadowColor="#D2D5CF"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Subtítulo de la app -->
     <TextView
@@ -57,28 +57,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appTitle" />
 
+    <!-- Switch para modo claro/oscuro -->
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Modo Oscuro"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
     <!-- Botón de iniciar sesión -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="331dp"
         android:layout_height="59dp"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="@color/dark_button_primary"
         android:text="Ingresar"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+        app:layout_constraintTop_toBottomOf="@+id/themeSwitch" />
 
-        <!-- Botón de registrarse -->
+    <!-- Botón de registrarse -->
     <Button
         android:id="@+id/signupButton"
         android:layout_width="339dp"
         android:layout_height="61dp"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/dark_button_secondary"
         android:text="Registrarse"
         android:textColor="@color/white"
@@ -87,4 +99,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
