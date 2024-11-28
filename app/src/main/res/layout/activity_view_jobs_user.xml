@@ -51,7 +51,7 @@
         app:layout_constraintBottom_toTopOf="@id/btn_postular_trabajo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:background="#eeefef"/>
 
     <!-- Botón para postular al trabajo -->

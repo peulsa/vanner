@@ -38,6 +38,7 @@
         <activity android:name=".ModifyUserAdminActivity" android:allowEmbedded="true"/>
         <activity android:name=".ViewCompaniesAdminActivity" android:allowEmbedded="true"/>
         <activity android:name=".ModifyCompanyAdminActivity" android:allowEmbedded="true"/>
+        <activity android:name=".ChatUserActivity" android:allowEmbedded="true"/>
     </application>
 
 </manifest>

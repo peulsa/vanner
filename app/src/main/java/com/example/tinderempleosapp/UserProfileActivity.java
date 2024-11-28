@@ -36,7 +36,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
     private TextView userName, userEdad, userLocation, userDescription, userSkill1;
     private ImageView profileImage;
-    private Button btnVerTrabajosDisponibles, btnLogout;
+    private Button btnVerTrabajosDisponibles, btnLogout, btnChats;
 
     private DatabaseReference usuariosRef;
     private FirebaseAuth mAuth;
@@ -61,6 +61,7 @@ public class UserProfileActivity extends AppCompatActivity {
         profileImage = findViewById(R.id.profileImage);
         btnVerTrabajosDisponibles = findViewById(R.id.btnVerTrabajosDispo);
         btnLogout = findViewById(R.id.btnLogout);
+        btnChats = findViewById(R.id.btnChats);
 
         // Inicializa Firebase Auth
         mAuth = FirebaseAuth.getInstance();
@@ -84,6 +85,11 @@ public class UserProfileActivity extends AppCompatActivity {
             finish();
         });
 
+        btnChats.setOnClickListener(v -> {
+            Intent intent = new Intent(UserProfileActivity.this, ChatUserActivity.class);
+            startActivity(intent);
+        });
+
         // Obtiene el correo del usuario autenticado
         String userEmail = mAuth.getCurrentUser() != null ? mAuth.getCurrentUser().getEmail() : null;
 
@@ -91,7 +97,7 @@ public class UserProfileActivity extends AppCompatActivity {
             // Inicializa la referencia de Firebase Database para los usuarios
             usuariosRef = FirebaseDatabase.getInstance().getReference("usuarios");
 
-            // Llama al método para obtener datos del usuario
+            // Llama al metodo para obtener datos del usuario
             getUserProfileDataByEmail(userEmail);
         } else {
             Log.e("UserProfileActivity", "No hay usuario autenticado.");
@@ -137,7 +143,7 @@ public class UserProfileActivity extends AppCompatActivity {
         });
     }
 
-    // Método para cargar la imagen de perfil desde Firebase Storage usando Picasso
+    // Metodo para cargar la imagen de perfil desde Firebase Storage usando Picasso
     private void loadProfileImage(String imagePath) {
         if (imagePath != null && !imagePath.isEmpty()) {
             Picasso.get()
@@ -151,7 +157,7 @@ public class UserProfileActivity extends AppCompatActivity {
         }
     }
 
-    // Método para abrir el selector de imágenes
+    // Metodo para abrir el selector de imágenes
     private void openImageChooser() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/*");
